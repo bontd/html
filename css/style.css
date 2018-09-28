@@ -114,12 +114,12 @@ p {
 	width: 20%;
 	display: flex;
 	border-right: solid thin #ff0000;
-	padding: 0 15px;
+	padding: 0;
 }
 .input-search input,
 .select-search select {
 	width: 100%;
-	padding: 8px 5px;
+	padding: 8px 15px;
 	border: 0;
 }
 .input-search input:focus,
@@ -133,6 +133,14 @@ p {
 }
 .fun-fact {
 	margin: 40px 0 0 0;
+}
+.retangle h4 {
+	margin: 30px 0;
+	font-size: 16px;
+	font-weight: bold;
+}
+.retangle p {
+	min-height: 36px;
 }
 
 
