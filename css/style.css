@@ -227,17 +227,27 @@ a:hover {
 	background-color: #ffffff;
 	z-index: 9;
 	border: solid thin #cccccc;
+	border-radius: 5px;
+	box-shadow: 0 5px 5px 2px #eeeeee;
 }
 .group-btn-cate .btn>ul {
 	left: 0;
 	top: 80px;
+}
+.group-btn-cate .btn>ul li a:hover {
+	background-color: #ff0000;
+	color: #ffffff;
 }
 .group-btn-cate .btn ul li a{
 	width: 100%;
 	display: inline-block;
 	text-align: left;
 	padding: 5px 15px;
-	border-bottom: solid thin #eeeeee;
+	border-bottom: solid thin #cccccc;
+}
+.group-btn-cate .btn>ul>li>a:last-child,
+.group-btn-cate .btn>ul>li ul li:last-child>a {
+	border: 0;
 }
 .group-btn-cate .btn:focus>ul {
 	display: block;
@@ -325,6 +335,12 @@ a:hover {
 }
 .child-dropdown-item {
 	left: 157px!important;
+}
+.side-customer {
+	width: 100%;
+}
+.side-customer .slick-slide {
+	padding: 0 15px;
 }
 .h4 {
 	/*font-weight: bold;*/
