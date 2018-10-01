@@ -107,6 +107,15 @@ a:hover {
 .carousel-inner>.item>a>img, .carousel-inner>.item>img {
 	width: 100%;
 }
+.banner {
+	overflow: hidden;
+}
+.banner .slick-slide {
+	display: none;
+}
+.banner .slick-slide.slick-active {
+	display: block;
+}
 .search-box {
 	width: 100%;
 	height: 65px;
@@ -350,12 +359,28 @@ a:hover {
 	.search {
 		max-width: 100%;
 		padding: 0;
+		display: flex;
+		justify-content: center;
 	}
 	.search-box {
-		position: relative;
-		bottom: 0;
-		height: 40px;
+		/*position: relative;*/
+		width: 320px;
+		background-color: rgba(255,255,255,0.8);
+		flex-direction: column;
+		bottom: 20px;
+		height: auto;
 		border-radius: 0;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+		padding: 15px;
+	}
+	.search-box>div,
+	.search-box .btn-search {
+		width: 100%;
+		border-right: 0;
+		border-bottom: solid thin #ff0000;
+		margin: 0 0 10px 0;
 	}
 	.footer {
 		height: auto;
@@ -378,14 +403,43 @@ a:hover {
 	}
 }
 @media (max-width: 670px){
+	.header {
+		height: 170px;
+	}
+	.nav-header {
+		position: absolute;
+		width: 100%;
+		background-color: #ffffff;
+		top: 50px;
+		left: 0;
+	}
+	.nav-header>.container {
+		padding: 0;
+	}
+	.navbar {
+		padding: 0 15px;
+	}
 	.navbar-nav {
 		flex-direction: column; 
 	}
 	.navbar-nav>li a {
 		height: 50px;
 	}
+	.navbar-collapse.collapse {
+		width: 100%;
+		position: absolute;
+		top: 119px;
+		left: 0;
+		background-color: #ffffff;
+		z-index: 9;	
+		padding: 0 15px;
+	}
 	.left-top-header {
 		display: none;
+	}
+	.banner .slick-side {
+		width: 1000px;
+		margin: 0 -45%;
 	}
 }
 @media (max-width: 530px) {
